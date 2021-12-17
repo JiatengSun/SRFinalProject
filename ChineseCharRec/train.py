@@ -8,19 +8,19 @@ import cv2
 tf.app.flags.DEFINE_string("mode", "test", "train or test")
 tf.app.flags.DEFINE_string("checkpoint", "./checkpoint/", "dir of checkpoint")
 
-tf.app.flags.DEFINE_string("train_dir", "C:/Users/42413/Desktop/Sketch Rec/ChineseCharRec/gnt/trn", "dir of training data")
-tf.app.flags.DEFINE_string("test_dir", "C:/Users/42413/Desktop/Sketch Rec/ChineseCharRec/gnt/tst", "dir of test data")
+tf.app.flags.DEFINE_string("train_dir", "C:/Users/42413/Documents/GitHub/SRFinalProject/ChineseCharRec/gnt/trn", "dir of training data")
+tf.app.flags.DEFINE_string("test_dir", "C:/Users/42413/Documents/GitHub/SRFinalProjectChineseCharRec/gnt/tst", "dir of test data")
 
 tf.app.flags.DEFINE_string("test_image", "", "test image for pictest")
 tf.app.flags.DEFINE_string("logger_dir", "./logger", "dir of logger")
 
 tf.app.flags.DEFINE_integer("batch_size", 128, "size of batch")
 tf.app.flags.DEFINE_integer("img_size", 64, "size of resized images")
-tf.app.flags.DEFINE_string("char_dict", "C:/Users/42413/Desktop/Sketch Rec/ChineseCharRec/char_dict", "path to character dict")
+tf.app.flags.DEFINE_string("char_dict", "C:/Users/42413/Documents/GitHub/SRFinalProject/ChineseCharRec/char_dict", "path to character dict")
 tf.app.flags.DEFINE_bool("restore", False, "restore from previous checkpoint")
 
 tf.app.flags.DEFINE_integer("max_step", 100001, "maximum steps")
-tf.app.flags.DEFINE_string("test_pic", "C:/Users/42413/Desktop/Sketch Rec/ChineseCharRec/test.png", "path to test picture")
+tf.app.flags.DEFINE_string("test_pic", "C:/Users/42413/Documents/GitHub/SRFinalProject/ChineseCharRec/test.png", "path to test picture")
 FLAGS = tf.app.flags.FLAGS
 
 
